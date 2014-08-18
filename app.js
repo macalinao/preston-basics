@@ -4,7 +4,7 @@ var preston = require('preston');
 
 // Let's create a simple app...
 var app = express();
-mongoose.connect(process.env.MONGOHQ_URI || 'mongodb://localhost:27017');
+mongoose.connect(process.env.MONGOHQ_URL || 'mongodb://localhost:27017');
 var Post = mongoose.model('Post', new mongoose.Schema({
   title: String,
   contents: String
