@@ -1,0 +1,8 @@
+$ POST /posts '{"title": "A sample post", "contents": "Lorem ipsum dolor sit amet"}' -H "Content-Type: application/json"
+{"__v":0,"title":"A sample post","contents":"Lorem ipsum dolor sit amet","_id":"53f26ed6e837e90200c26032","id":"53f26ed6e837e90200c26032"
+
+$ PUT /posts/53f26ed6e837e90200c26032 '{"title": "Different"}' -H "Content-Type: application/json"
+{"title":"Different","contents":"Lorem ipsum dolor sit amet","_id":"53f26ed6e837e90200c26032","__v":0,"id":"53f26ed6e837e90200c26032"}
+
+$ GET /posts
+[{"__v":0,"_id":"53f26ed6e837e90200c26032","contents":"Lorem ipsum dolor sit amet","title":"Different","id":"53f26ed6e837e90200c26032"}]
