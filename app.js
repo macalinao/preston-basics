@@ -19,7 +19,7 @@ preston(Post);
 app.use('/api', preston.middleware());
 
 // Holds our AngularJS app if we're using that. Completely optional.
-app.use(express.static(__dirname + 'index.html'));
+app.use(express.static(__dirname + '/index.html'));
 
 var port = process.env.PORT || 3005; // Because the internet
 app.listen(port);
