@@ -1,0 +1,12 @@
+{
+  "name": "preston-basics",
+  "description": "Basic app using Preston",
+  "version": "0.1.0",
+  "author": "Ian Macalinao <me@ian.pw>",
+  "dependencies": {
+    "body-parser": "^1.6.5",
+    "express": "^4.8.4",
+    "mongoose": "^3.8.15",
+    "preston": "^0.2.0"
+  }
+}

@@ -3,7 +3,7 @@ var mongoose = require('mongoose');
 var preston = require('preston');
 
 // Let's create a simple app...
-var app = express.createServer();
+var app = express();
 var Post = mongoose.model('Post', new mongoose.Schema({
   title: String,
   contents: String
@@ -19,6 +19,8 @@ preston(Post);
 app.use('/api', preston.middleware());
 
 // Holds our AngularJS app if we're using that. Completely optional.
-app.use(express.static(__dirname + '/public'));
+app.use(express.static(__dirname + 'index.html'));
 
-app.listen(3005); // Because the internet
+var port = process.env.PORT || 3005; // Because the internet
+app.listen(port);
+console.log('Express server listening on port %d', port);
