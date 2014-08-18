@@ -7,6 +7,6 @@
     "body-parser": "^1.6.5",
     "express": "^4.8.4",
     "mongoose": "^3.8.15",
-    "preston": "^0.2.0"
+    "preston": "^0.2.1"
   }
 }
